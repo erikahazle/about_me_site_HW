@@ -2,21 +2,126 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  margin: 0;
+  background-image: url('wheel.jpeg');
+  background-size: cover;
+  text-align: center;
+}
+
+header {
+  display: block;
+}
 
 nav {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding-top: 10px;
   text-align: center;
   position: fixed;
-  width: 100% ;
-  background-color: pink;
+  width: 100%;
+  height: 60px;
+  display: block;
+  z-index: 99999;
 }
 
 nav ul li {
   display: inline-block;
+  border: 2px solid black;
+  width: 180px;
+  background-color: white;
 }
 
 nav li a {
   text-decoration: none;
-  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
 }
+
+p {
+  color: white;
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*************************
+HOME PAGE
+************************/
+
+.home-wrapper {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+
+/*.welcome-box {
+  background-color: black;
+  height: 200px;
+  width: 350px;
+  opacity: 0.5;
+  display: inline-block;
+  margin-top: 300px;
+  vertical-align: middle;
+  line-height: 180px;
+}*/
+
+/*************************
+ABOUT PAGE
+************************/
+
+.about-wrapper {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  background-color: black;
+  opacity: 0.5;
+  width: 750px;
+  height: 600px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.about-p {
+  padding: 20px;
+}
+
+.about-link {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  width: 200px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+/*************************
+ABOUT PAGE
+************************/
+
+.portfolio-wrapper {
+  position: relative;
+  top: 100px;
+}
+
+.portfolio-img {
+  margin: 20px;
+  width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
