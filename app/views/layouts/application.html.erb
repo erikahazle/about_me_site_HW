@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>AboutMeSite</title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Oswald' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Montserrat', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -22,7 +23,11 @@
   <div class="<%= params[:action] %>-wrapper">
     <%= yield %>
   </div>  
-
+  <footer>
+    <li>Contact</li>
+    <li>LinkedIn</li>
+    <li>Github</li>
+  </footer>
 
 </body>
 </html>

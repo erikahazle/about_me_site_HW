@@ -5,6 +5,8 @@
 body {
   margin: 0;
   text-align: center;
+  position: relative;
+  top: -17px;
 }
 
 header {
@@ -30,10 +32,15 @@ nav ul li {
   opacity: 0.5;
 }
 
+nav ul li:hover {
+  opacity: 1;
+}
+
 nav li a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   color: black;
+  width: 100%;
 }
 
 p {
@@ -42,23 +49,85 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+footer {
+  background-color: #9CA6AD;
+  height: 100px;
+  position: relative;
+  top: 470px;
+  line-height: 100px;
+}
+
+footer li {
+  list-style: none;
+  border: 2px solid white;
+  width: 60px;
+  display: inline;
+  color: white;
+  padding: 5px;
+}
+
+footer li:hover {
+  background-color: #666D73;
+}
+
 /*************************
 HOME PAGE
 ************************/
 
 .home-wrapper {
+  padding-top: 60px;
   text-align: center;
   height:700px;
   background-image: url('sky2.jpeg');
   background-size: cover;
+  line-height: 500px;
 }
 
 .skills {
-  height: 300px;
-  background-color: grey;
+  height: 250px;
+  background-color: white;
   position: relative;
-  top: 700px;
+  top: 500px;
 }
+
+.quotation {
+  height: 200px;
+  background-color: #84A8BF;
+  position: relative;
+  top: 500px;
+}
+
+.home-welcome {
+  color: white;
+}
+
+#home-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-animation: slide-right 1s forwards;
+  animation: slide-right 1s forwards;
+}
+
+#home-subtitle {
+    font-family: 'Lobster', cursive;
+    width: 600px;
+    height: 120px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes slide-right {
+    100% { left: 500px; }
+}
+
+@keyframes slide-right {
+    100% { left: 500px; }
+}
+
+
 
 /*************************
 ABOUT PAGE
